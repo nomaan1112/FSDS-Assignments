@@ -1,0 +1,119 @@
+1. Scenario: A company wants to analyze the sales performance of its products in different regions. They have collected the following data:
+   Region A: [10, 15, 12, 8, 14]
+   Region B: [18, 20, 16, 22, 25]
+   Calculate the mean sales for each region.
+
+SOLUTION:
+
+Mean of Region A = (10+15+12+8+14)/5 = 11.8
+Mean of Region B = (18+20+16+22+25) = 20.2
+
+2. Scenario: A survey is conducted to measure customer satisfaction on a scale of 1 to 5. The data collected is as follows:
+   [4, 5, 2, 3, 5, 4, 3, 2, 4, 5]
+   Calculate the mode of the survey responses.
+
+Ans = 4
+
+3. Scenario: A company wants to compare the salaries of two departments. The salary data for Department A and Department B are as follows:
+   Department A: [5000, 6000, 5500, 7000]
+   Department B: [4500, 5500, 5800, 6000, 5200]
+   Calculate the median salary for each department.
+
+SOLUTION:
+
+Median of A = (5500+6000)/2 = 5750
+Median of B = 5500
+
+4. Scenario: A data analyst wants to determine the variability in the daily stock prices of a company. The data collected is as follows:
+   [25.5, 24.8, 26.1, 25.3, 24.9]
+   Calculate the range of the stock prices.
+
+Range = [24.8,26.1]
+
+5. Scenario: A study is conducted to compare the performance of two different teaching methods. The test scores of the students in each group are as follows:
+   Group A: [85, 90, 92, 88, 91]
+   Group B: [82, 88, 90, 86, 87]
+   Perform a t-test to determine if there is a significant difference in the mean scores between the two groups.
+
+SOLUTION:
+
+Mean of Group A = (85+90+92+88+91)/5 = 89.2
+Mean of Group B = (82+88+90+86+87)/5 = 86.6
+
+Standard Deviation of A ≈ 2.701
+Standard Deviation of B ≈ 2.701
+
+6. Scenario: A company wants to analyze the relationship between advertising expenditure and sales. The data collected is as follows:
+   Advertising Expenditure (in thousands): [10, 15, 12, 8, 14]
+   Sales (in thousands): [25, 30, 28, 20, 26]
+   Calculate the correlation coefficient between advertising expenditure and sales.
+
+SOLUTION:
+
+Standard deviation of Advertising Expenditure = 2.86
+Standard deviation of Sales = 3.76
+
+Covariance of (Advertising Exp. & Sales) = 10.33
+
+Pearson Correlation Coeffecient = Covariance of (Advertising Exp. , Sales)/ ((Std Dev of Advertising Exp) * (Std Dev of Sales))
+                                = 10.33/(2.86*3.76)
+                                = 0.9357
+
+7. Scenario: A survey is conducted to measure the heights of a group of people. The data collected is as follows:
+   [160, 170, 165, 155, 175, 180, 170]
+   Calculate the standard deviation of the heights.
+
+Solution:
+
+Standard Deviation = 8.59
+
+8. Scenario: A company wants to analyze the relationship between employee tenure and job satisfaction. The data collected is as follows:
+   Employee Tenure (in years): [2, 3, 5, 4, 6, 2, 4]
+   Job Satisfaction (on a scale of 1 to 10): [7, 8, 6, 9, 5, 7, 6]
+   Perform a linear regression analysis to predict job satisfaction based on employee tenure.
+
+SOLUTION:
+
+Step 1: Calculate the mean of the employee tenure and job satisfaction.
+Employee Tenure (in years): [2, 3, 5, 4, 6, 2, 4]
+Mean of Employee Tenure = (2 + 3 + 5 + 4 + 6 + 2 + 4) / 7 = 3.57
+
+Job Satisfaction (on a scale of 1 to 10): [7, 8, 6, 9, 5, 7, 6]
+Mean of Job Satisfaction = (7 + 8 + 6 + 9 + 5 + 7 + 6) / 7 = 6.86
+
+Step 2: Calculate the deviation of each data point from the mean for both variables.
+Deviation of Employee Tenure = [2-3.57, 3-3.57, 5-3.57, 4-3.57, 6-3.57, 2-3.57, 4-3.57] ≈ [-1.57, -0.57, 1.43, 0.43, 2.43, -1.57, 0.43]
+Deviation of Job Satisfaction = [7-6.86, 8-6.86, 6-6.86, 9-6.86, 5-6.86, 7-6.86, 6-6.86] ≈ [0.14, 1.14, -0.86, 2.14, -1.86, 0.14, -0.86]
+
+Step 3: Calculate the product of the deviations for each data point.
+Product of Deviations = [-1.57 * 0.14, -0.57 * 1.14, 1.43 * -0.86, 0.43 * 2.14, 2.43 * -1.86, -1.57 * 0.14, 0.43 * -0.86] ≈ [-0.22, -0.65, -1.23, 0.92, -4.51, -0.22, -0.37]
+
+Step 4: Calculate the sum of the products of deviations.
+Sum of Products of Deviations = -0.22 + -0.65 + -1.23 + 0.92 + -4.51 + -0.22 + -0.37 ≈ -6.28
+
+Step 5: Calculate the sum of squared deviations for employee tenure.
+Sum of Squared Deviations of Employee Tenure = (-1.57)^2 + (-0.57)^2 + (1.43)^2 + (0.43)^2 + (2.43)^2 + (-1.57)^2 + (0.43)^2 ≈ 14.71
+
+Step 6: Calculate the regression coefficient (slope).
+Slope = Sum of Products of Deviations / Sum of Squared Deviations of Employee Tenure = -6.28 / 14.71 ≈ -0.426
+
+Step 7: Calculate the y-intercept (constant term).
+Intercept = Mean of Job Satisfaction - Slope * Mean of Employee Tenure = 6.86 - (-0.426 * 3.57) ≈ 8.35
+
+Step 8: Formulate the linear regression equation.
+Job Satisfaction = Intercept + Slope * Employee Tenure
+Job Satisfaction = 8.35 - 0.426 * Employee Tenure
+
+Step 9: Use the equation to predict job satisfaction for a given employee tenure.
+For example, if an employee has a tenure of 7 years:
+Job Satisfaction = 8.35 - 0.426 * 7 ≈ 5.19
+
+Therefore, based on the linear regression analysis, we can predict that an employee with a tenure of 7 years would have a job satisfaction score of approximately 5.19.
+
+9. Scenario: A study is conducted to compare the effectiveness of two different medications. The recovery times of the patients in each group are as follows:
+   Medication A: [10, 12, 14, 11, 13]
+   Medication B: [15, 17, 16, 14, 18]
+   Perform an analysis of variance (ANOVA) to determine if there is a significant difference in the mean recovery times between the two medications.
+
+SOLUTION:
+
